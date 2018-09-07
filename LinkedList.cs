@@ -94,14 +94,14 @@ namespace SinglyLinkedListImplementation
 
     }
 
-    public int GetNode(int data)
-    {
-      while (this.head.value != data)
-      {
-        this.head = this.head.next;
-      }
-      return head.value;
-    }
+    //public int GetNode(int data)
+    //{
+    //  while (this.head.value != data)
+    //  {
+    //    this.head = this.head.next;
+    //  }
+    //  return head.value;
+    //}
 
     public Node GetLastNode()
     {
@@ -179,6 +179,7 @@ namespace SinglyLinkedListImplementation
       }
     }
 
+    //get n-1th index node
     public Node GetNodeBeforeIndex(int index)
     {
       //index cannot be 0 or less than 0
@@ -193,6 +194,18 @@ namespace SinglyLinkedListImplementation
       return tempNode;
     }
 
+    public Node GetNodeAtIndex(int index)
+    {
+      int count = 0;
+      Node tempNode = this.head;
+      while(count != index)
+      {
+        tempNode = tempNode.next;
+        count = count +1;
+      }
+      return tempNode;
+    }
+    //get  n+1th index node
     public Node GetNodeAfterIndex(int index)
     {
       // index cannot be lastindex or greater than lastindex
