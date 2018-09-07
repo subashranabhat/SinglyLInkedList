@@ -1,0 +1,11 @@
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp2.0\SinglyLinkedListImplementation.deps.json
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp2.0\SinglyLinkedListImplementation.runtimeconfig.json
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp2.0\SinglyLinkedListImplementation.runtimeconfig.dev.json
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp2.0\SinglyLinkedListImplementation.dll
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp2.0\SinglyLinkedListImplementation.pdb
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.csprojResolveAssemblyReference.cache
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.csproj.CoreCompileInputs.cache
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.AssemblyInfoInputs.cache
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.AssemblyInfo.cs
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.dll
+C:\Users\subas\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp2.0\SinglyLinkedListImplementation.pdb
