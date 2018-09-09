@@ -28,6 +28,7 @@ namespace SinglyLinkedListImplementation
     // the linked list cannot be null,i.e head cannot be null, since it returns a node
     public void AddNode(int n)
     {
+      Console.WriteLine("adding node with value " + n);
       if (head == null)
       {
         head = new Node();
@@ -49,6 +50,7 @@ namespace SinglyLinkedListImplementation
 
     public void DeleteNodeByIndex(int index)
     {
+      Console.WriteLine("deleting node at index " + index);
       // index has to be greater than 0 and less than length
       if (index == 0)
       {
@@ -176,6 +178,7 @@ namespace SinglyLinkedListImplementation
           temp = temp.next;
           Console.WriteLine("Node " + index + " is " + temp.value);
         }
+        Console.WriteLine("***************************************");
       }
     }
 
@@ -198,10 +201,10 @@ namespace SinglyLinkedListImplementation
     {
       int count = 0;
       Node tempNode = this.head;
-      while(count != index)
+      while (count != index)
       {
         tempNode = tempNode.next;
-        count = count +1;
+        count = count + 1;
       }
       return tempNode;
     }
@@ -219,6 +222,48 @@ namespace SinglyLinkedListImplementation
       }
       return tempNode;
     }
+
+    public void InsertNodeAfterIndex(int index, int val)
+    {
+      if(index >= 0)
+      {
+        Node n = GetNodeAtIndex(index);
+        Node after = GetNodeAfterIndex(index);
+        Node newNode = new Node();
+        Console.WriteLine("adding new node with value " +  val + "after index" + index);
+        n.next = newNode;
+        newNode.next = after;
+        newNode.value = val;
+      }
+      else
+      {
+        Console.WriteLine("Incorrect value of index. Please pass values greater than or equal to zero");
+      }
+   
+    }
+
+    public void InsertNodeBeforeIndex (int index, int val)
+    {
+      if(index == 0)
+      {
+        Console.WriteLine("adding new node before index " + index + " with value " +  val);
+        Node tempNewNode = new Node();
+        tempNewNode.next = this.head;
+        tempNewNode.value = val;
+        this.head = tempNewNode;
+      }
+      else
+      {
+        Console.WriteLine("adding new node before index " + index + " with value " +  val);
+        Node n = GetNodeBeforeIndex(index);
+        Node nodeIndex = GetNodeAtIndex(index);
+        Node temp = new Node();
+        n.next = temp;
+        temp.value = val;
+        temp.next = nodeIndex;
+      }
+     
+    }//close of method
 
   }
 }
